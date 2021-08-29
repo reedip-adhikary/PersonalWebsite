@@ -241,15 +241,20 @@ img{
 }
 
 /* Active link */
-
+/* .active-link{
+    color: var(--first-color);
+} */
 
 /* Change background header */
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
 
 
 /*==================== HOME ====================*/
-/* .home{
+.home{
     height: 100vh;
-} */
+}
 
 .home__container{
     gap: 1rem;
@@ -385,6 +390,9 @@ img{
 }
 
 /*==================== ABOUT ====================*/
+.about{
+    height: 100vh;
+}
 
 .about__img{
     width: 200px;
@@ -632,6 +640,9 @@ about__info-name{
 }
 
 /*==================== SERVICES ====================*/
+.services{
+    height: 100vh;
+}
 .services__container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -879,12 +890,12 @@ about__info-name{
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 
 .contact__information{
     display: flex;
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1-5);
 }
 
 .contact__icon{
@@ -982,7 +993,54 @@ about__info-name{
 }
 
 /*==================== FOOTER ====================*/
+.footer{
+    padding-top: 2rem;
+}
 
+.footer__container{
+    row-gap: 3.5rem;
+}
+
+.footer__bg{
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.footer__title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer__subtitle{
+    font-size: var(--small-font-size);
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer__link:hover{
+    color: var(--first-color-lighter);
+    transition: .3s;
+}
+
+.footer__social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover{
+    color: var(--first-color-lighter);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__social,
+.footer__link{
+    color: white;
+}
 
 /*========== SCROLL UP ==========*/
 
